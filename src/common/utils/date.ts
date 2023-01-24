@@ -1,0 +1,7 @@
+export default function calcTime (time: string) {
+    const [hour = '0', minutes = '0', secs = '0'] = time.split(":");
+    const hourInSeconds = Number(hour) * 3600;
+    const minutesInSeconds = Number(minutes) * 60;
+
+    return hourInSeconds + minutesInSeconds + Number(secs);
+}
